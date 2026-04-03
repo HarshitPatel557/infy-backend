@@ -11,7 +11,7 @@ app = FastAPI(title="WealthApp API", version="7.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000", "https://personal-wealth-management-t1.vercel.app/"],
+    allow_origins=["*"],
     allow_credentials=True, allow_methods=["*"], allow_headers=["*"],
 )
 
